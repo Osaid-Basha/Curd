@@ -8,7 +8,7 @@ import About from './pages/about/About';
 
 export default function App() {
   return (
-    <>
+    <div className="container">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -17,6 +17,6 @@ export default function App() {
         <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
-    </>
+    </div>
   );
 }
