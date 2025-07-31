@@ -8,7 +8,7 @@ export default function Index() {
     
   const deleteUser=async(id)=>{
 
-    const response=await axios.delete(`${import.meta.env.VITE_BURL}/${id}`);
+    const response=await axios.delete(`${import.meta.env.VITE_BURL}/users/${id}`);
     console.log(response);
     const newUser=data.users.filter((user)=>user._id!==id);
     setData({users:newUser});
