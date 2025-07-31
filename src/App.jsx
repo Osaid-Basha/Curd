@@ -5,6 +5,8 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/home/Home';
 import Create from './pages/user/Create';
 import About from './pages/about/About';
+import Details from './pages/user/Details';
+import Update from './pages/user/Update';
 
 export default function App() {
   return (
@@ -15,6 +17,8 @@ export default function App() {
         <Route path="/users" element={<Home />} />
         <Route path="/add" element={<Create />} />
         <Route path="/about" element={<About />} />
+        <Route path="/details/:id" element={<Details />} />
+        <Route path="/edit/:id" element={<Update />} />
       </Routes>
       <Footer />
     </div>
